@@ -51,15 +51,12 @@ def deletetask():
 
 
 #icon
-image_icon = PhotoImage(file="D:\Document\VisualStudioCode\Tutorial-Python\Python-Diana\Py_Latihan\Beginner\Image\gask.png")
+image_icon = PhotoImage(file="Image\gask.png")
 root.iconphoto(False, image_icon)
 
 #top bar
-top_image = PhotoImage(file='D:\Document\VisualStudioCode\Tutorial-Python\Python-Diana\Py_Latihan\Beginner\Image\gbar2.png')
+top_image = PhotoImage(file="Image\gbar2.png")
 Label(root,image=top_image).pack()
-
-#dock_image = PhotoImage(file="D:\Document\VisualStudioCode\Tutorial-Python\Python-Diana\Py_Latihan\Beginner\Image\dock.png")
-#Label(root, image=dock_image, bg="#FF0075").place(x=30, y=25)
 
 heading = Label(root, text="ALL TASK", font="arial 24 bold", fg="white", bg="#FF0075")
 heading.place(x=115, y=17)
@@ -92,7 +89,7 @@ listbox.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=listbox.yview)
 
 #delete
-delete_icon = PhotoImage(file="D:\Document\VisualStudioCode\Tutorial-Python\Python-Diana\Py_Latihan\Beginner\Image\delete1.png")
+delete_icon = PhotoImage(file="Image\delete1.png")
 Button(root, image=delete_icon, bd=0, command=deletetask).pack(side=BOTTOM, pady=20)
 
 
